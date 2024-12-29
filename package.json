@@ -1,5 +1,5 @@
 {
-  "name": "livestream-server",
+  "name": "StreamHub",
   "version": "0.0.1",
   "description": "A conference call implementation using WebRTC, Socket.io and Node.js.",
   "main": "src/app.js",
@@ -17,17 +17,12 @@
     "start": "node src/app.js"
   },
   "repository": {
-    "type": "git",
-    "url": "git+https://github.com/amirsanni/livestream-server.git"
+    "type": "git"
   },
   "keywords": [
     "LiveStream",
     "Server"
   ],
-  "author": "Amir Sanni <amirsanni@gmail.com>",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/amirsanni/livestream-server/issues"
-  },
-  "homepage": "https://github.com/amirsanni/livestream-server#readme"
+  "author": "Elkhazri Hajar <elkhazrihajar373@gmail.com>",
+  "license": "ISC"
 }
