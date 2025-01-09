@@ -237,10 +237,16 @@ body{
 }
 
 .image-container{
-    margin-right:70%; 
-    width: 300px;
-    height: auto;
+    position: absolute;
+  top: 50%; /* Centrage vertical */
+  right: 0; /* Aligne à droite */
+  transform: translateY(-50%); /* Centre verticalement */
+    
 }
+img {
+    max-width: 100%; /* Ajuste la taille de l'image si nécessaire */
+    height: auto;
+  }
 .animated-image{
     display: block;
     margin: auto;
@@ -248,7 +254,7 @@ body{
     animation: moveUpAndDown 2s infinite;
 
 }
-@keyframes moveUpAndDown{
+/* @keyframes moveUpAndDown{
     0%{
         transform: translateY(0);
     }
@@ -264,4 +270,19 @@ body{
     100%{
         transform: translateY(0);
     }
-}
+} */
+ .text-center0{
+    display: grid;
+    place-items: center; /* Centre verticalement et horizontalement */
+   
+    text-align: 30px;
+    display: flex;
+    justify-content: flex-start; /* Aligne à gauche */
+    height: 50vh; /* Utilise toute la hauteur de la page */
+    /* padding-left: 20px;
+    padding-bottom: 0%; */
+ }
+ .button0{
+    
+ }
+ 
