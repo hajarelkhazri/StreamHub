@@ -9,18 +9,18 @@ window.addEventListener( 'load', () => {
     const username = sessionStorage.getItem( 'username' );
 
     if ( !room ) {
-        document.querySelector( '#room-create' ).attributes.removeNamedItem( 'hidden' );
+        document.querySelector( '#room-create' ).removeAttribute( 'hidden' );
     }
 
     else if ( !username ) {
-        document.querySelector( '#username-set' ).attributes.removeNamedItem( 'hidden' );
+        document.querySelector( '#username-set' ).removeAttribute( 'hidden' );
     }
 
     else {
         let commElem = document.getElementsByClassName( 'room-comm' );
 
         for ( let i = 0; i < commElem.length; i++ ) {
-            commElem[i].attributes.removeNamedItem( 'hidden' );
+            commElem[i].removeAttribute( 'hidden' );
         }
 
         var pc = [];

@@ -235,3 +235,33 @@ body{
         z-index: 1000;
     }
 }
+
+.image-container{
+    margin-right:70%; 
+    width: 300px;
+    height: auto;
+}
+.animated-image{
+    display: block;
+    margin: auto;
+    position: relative;
+    animation: moveUpAndDown 2s infinite;
+
+}
+@keyframes moveUpAndDown{
+    0%{
+        transform: translateY(0);
+    }
+    25%{
+        transform: translateY(-30px);
+    }
+    50%{
+        transform: translateY(-30px);
+    }
+    75%{
+        transform:translateY(0);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
