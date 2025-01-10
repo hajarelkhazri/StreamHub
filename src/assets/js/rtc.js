@@ -1,7 +1,4 @@
-/**
- * @author Amir Sanni <amirsanni@gmail.com>
- * @date 6th January, 2020
- */
+
 import h from './helpers.js';
 
 window.addEventListener( 'load', () => {
@@ -443,55 +440,55 @@ window.addEventListener( 'load', () => {
         } );
 
 
-        //When record button is clicked
-        document.getElementById( 'record' ).addEventListener( 'click', ( e ) => {
-            /**
-             * Ask user what they want to record.
-             * Get the stream based on selection and start recording
-             */
-            if ( !mediaRecorder || mediaRecorder.state == 'inactive' ) {
-                h.toggleModal( 'recording-options-modal', true );
-            }
+//         //When record button is clicked
+//         document.getElementById( 'record' ).addEventListener( 'click', ( e ) => {
+//             /**
+//              * Ask user what they want to record.
+//              * Get the stream based on selection and start recording
+//              */
+//             if ( !mediaRecorder || mediaRecorder.state == 'inactive' ) {
+//                 h.toggleModal( 'recording-options-modal', true );
+//             }
 
-            else if ( mediaRecorder.state == 'paused' ) {
-                mediaRecorder.resume();
-            }
+//             else if ( mediaRecorder.state == 'paused' ) {
+//                 mediaRecorder.resume();
+//             }
 
-            else if ( mediaRecorder.state == 'recording' ) {
-                mediaRecorder.stop();
-            }
-        } );
-
-
-        //When user choose to record screen
-        document.getElementById( 'record-screen' ).addEventListener( 'click', () => {
-            h.toggleModal( 'recording-options-modal', false );
-
-            if ( screen && screen.getVideoTracks().length ) {
-                startRecording( screen );
-            }
-
-            else {
-                h.shareScreen().then( ( screenStream ) => {
-                    startRecording( screenStream );
-                } ).catch( () => { } );
-            }
-        } );
+//             else if ( mediaRecorder.state == 'recording' ) {
+//                 mediaRecorder.stop();
+//             }
+//         } );
 
 
-        //When user choose to record own video
-        document.getElementById( 'record-video' ).addEventListener( 'click', () => {
-            h.toggleModal( 'recording-options-modal', false );
+//         //When user choose to record screen
+//         document.getElementById( 'record-screen' ).addEventListener( 'click', () => {
+//             h.toggleModal( 'recording-options-modal', false );
 
-            if ( myStream && myStream.getTracks().length ) {
-                startRecording( myStream );
-            }
+//             if ( screen && screen.getVideoTracks().length ) {
+//                 startRecording( screen );
+//             }
 
-            else {
-                h.getUserFullMedia().then( ( videoStream ) => {
-                    startRecording( videoStream );
-                } ).catch( () => { } );
-            }
-        } );
+//             else {
+//                 h.shareScreen().then( ( screenStream ) => {
+//                     startRecording( screenStream );
+//                 } ).catch( () => { } );
+//             }
+//         } );
+
+
+//         //When user choose to record own video
+//         document.getElementById( 'record-video' ).addEventListener( 'click', () => {
+//             h.toggleModal( 'recording-options-modal', false );
+
+//             if ( myStream && myStream.getTracks().length ) {
+//                 startRecording( myStream );
+//             }
+
+//             else {
+//                 h.getUserFullMedia().then( ( videoStream ) => {
+//                     startRecording( videoStream );
+//                 } ).catch( () => { } );
+//             }
+//         } );
     }
-} );
+ } );

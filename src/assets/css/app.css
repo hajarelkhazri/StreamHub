@@ -1,6 +1,11 @@
-body{
-    background-image: url('.\bg.png');
-    background-size: cover;
+.html-body0{
+    margin: 0;
+    padding: 20px;
+    height: 100vh;
+    /* width: 100vh; */
+    background: linear-gradient(to bottom, #e6d5e6, #cba3cb, #a875a8, #7b487b, #502050);
+   
+    
     
 }
 .chat-col{
@@ -9,7 +14,7 @@ body{
     top: 40.5px;
     z-index: 1000;
     position: fixed;
-    color: #fff;
+    color: #ffff;
     padding-right: 5px;
     padding-left: 5px;
     padding-bottom: 40px;
@@ -158,14 +163,14 @@ body{
 }
 
 
-.record-option{
+/* .record-option{
     height: 200px;
     border-radius: 10%;
     border: 1px solid blue;
     cursor: pointer;
     padding: 10px;
     vertical-align: middle;
-}
+} */
 
 
 .custom-modal {
@@ -184,7 +189,7 @@ body{
     background-color: #fefefe;
     margin: 15% auto;
     padding: 20px;
-    border: 1px solid blue;
+    border: 1px solid rgb(80, 103, 237);
     width: 80%;
 }
 
@@ -202,11 +207,13 @@ body{
         z-index: 99999;
         transition: 0.3s;
         top: 47px;
+        background-color: #a875a8;
     }
   
     .chat-opened::-webkit-scrollbar {
         display: none;
     }
+    
 
     #chat-messages{
         height: 60vh;
@@ -215,6 +222,7 @@ body{
     .chat-box{
         bottom: 90px;
         margin-bottom: 0px;
+        background-color: #e3dee3;
     }
     
     .card-sm{
@@ -237,10 +245,8 @@ body{
 }
 
 .image-container{
-    position: absolute;
-  top: 50%; /* Centrage vertical */
-  right: 0; /* Aligne à droite */
-  transform: translateY(-50%); /* Centre verticalement */
+    position: relative;
+    height: 300px; /* Ajuste selon tes besoins */
     
 }
 img {
@@ -248,41 +254,88 @@ img {
     height: auto;
   }
 .animated-image{
-    display: block;
-    margin: auto;
     position: relative;
-    animation: moveUpAndDown 2s infinite;
+  animation: moveUpAndDown 2s ease-in-out forwards; /* Animation en 2 secondes */
 
 }
-/* @keyframes moveUpAndDown{
-    0%{
-        transform: translateY(0);
-    }
-    25%{
-        transform: translateY(-30px);
-    }
-    50%{
-        transform: translateY(-30px);
-    }
-    75%{
-        transform:translateY(0);
-    }
-    100%{
-        transform: translateY(0);
-    }
-} */
- .text-center0{
-    display: grid;
-    place-items: center; /* Centre verticalement et horizontalement */
-   
-    text-align: 30px;
+ @keyframes moveUpAndDown{
+    0% {
+    transform: translateY(0); /* Position initiale */
+  } 
+  30% {
+    transform: translateY(-100px); /* Déplacement vers le haut */
+  }
+  100% {
+    transform: translateY(0); /* Retour à la position d'origine */
+  }
+} 
+
+.html-body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
     display: flex;
+    justify-content: flex-start; /* Place le contenu à gauche */
+    align-items: center; /* Centre verticalement */
+    background: linear-gradient(to bottom, #e6d5e6, #cba3cb, #a875a8, #7b487b, #502050);  }
+ .text-center0{
+    display: flex;
+    align-items: center; /* Centre verticalement */
     justify-content: flex-start; /* Aligne à gauche */
-    height: 50vh; /* Utilise toute la hauteur de la page */
-    /* padding-left: 20px;
-    padding-bottom: 0%; */
+    margin-left: 70px;
+    padding-top: 200px; /* Ajuste l'espace par rapport au bord gauche */
+    text-align: center;
+    font-size: 3em;
+    color: #200b2e;
+    text-shadow: 0 0 5px #e0b0ff, 0 0 10px #e0b0ff, 0 0 15px #0b0a0b, 0 0 20px #0f020f;
  }
- .button0{
+ .text-center1{
+    display: flex;
+    
+    justify-content: flex-start; /* Aligne à gauche */
+    margin-left: 90px;
+    padding-top: 0px; /* Ajuste l'espace par rapport au bord gauche */
+    text-align: center;
+    font-size: 17px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: italic;
+ }
+ .text-center2{
+    display: flex;
+    
+    justify-content: flex-start; /* Aligne à gauche */
+    margin-left: 90px;
+    padding-top: 0px; /* Ajuste l'espace par rapport au bord gauche */
+    text-align: center;
+    font-size: 13px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: italic;
     
  }
+ .button0{
+    padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-left: 180px;
+  margin-top:50px;
+  border-radius: 9px ;
+  border: none;
+  
+ }
+ .bg-dark,.btn-info {
+    background-color: #1f1228 !important;
+    border-radius:30px !important;
+    border: none;
+  }
+  .bg-dark:hover {
+    background: linear-gradient(45deg, #f0eaf1, #5f3671);
+    transform: scale(1.05);
+  }
+.bg-dak{
+    background-color: #1f1228 !important;
+}
  
+ 
+.bg-info0{
+    background: linear-gradient(to bottom, #e6d5e6, #cba3cb, #a875a8, #7b487b, #502050);
+    }
