@@ -35,7 +35,7 @@ app.use( '/assets', express.static( path.join( __dirname, 'assets' ) ) );
 
 // Route pour la page d'index
 app.get('/index', (req, res) => {
-  res.sendFile(__dirname + '/login.html');
+  res.sendFile(__dirname + '/index.html');
 });
 
 
@@ -67,7 +67,7 @@ app.post("/register", async (req, res) => {
     [email,password]
   )
   console.log(result);
-  res.sendFile(__dirname + '/home.html');
+  res.sendFile(__dirname + '/index.html');
   }
    }
   catch(err){
