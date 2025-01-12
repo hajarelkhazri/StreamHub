@@ -40,16 +40,6 @@ app.get('/index', (req, res) => {
 
 
 io.of( '/stream' ).on( 'connection', stream );
-
-
-
-
-
-
-
-
-
-
 app.get("/login", (req, res) => {
   res.sendFile(__dirname + '/login.html');
 });
