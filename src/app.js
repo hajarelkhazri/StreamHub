@@ -2,10 +2,10 @@ let express = require( 'express' );
 let bodyParser= require ('body-parser');
 let pg =require ('pg');
 const db=new pg.Client({
-  user:"postgres",
-  host:"localhost",
+  user:"streamhubdb_user",
+  host:"dpg-cu36rk5ds78s73egasq0-a",
   database:"streamhubdb",
-  password:"123456",
+  password:"NekgrrTVNF2tfLkr5pZWkhtLMs49Mng4",
   port:5432,
 });
 db.connect();
